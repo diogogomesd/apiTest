@@ -5,10 +5,10 @@
 
 @Gorest
   Funcionalidade: Criar e editar contas de usuários
-    Eu como administrador do sistema, quero cadastrar, editar e excluir usuarios dos sistema
+    Eu como administrador do sistema, quero cadastrar.buscar, editar e excluir usuarios dos sistema
 
   Cenario: Cadastrar um novo usuarios na api gorest
     Dado que passou gorest token valido
     Quando envio uma request de cadastro de usuario com dados validos
     Entao o usuario deve criado corretamente
-    E o status code deve ser 200
+    E o status code deve ser "201"

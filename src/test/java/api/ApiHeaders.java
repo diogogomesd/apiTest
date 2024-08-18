@@ -1,5 +1,15 @@
 package api;
 
-public class ApiHeaders extends ApiUtils{
+import java.util.HashMap;
+import java.util.Map;
+
+public class ApiHeaders{
+    Map<String, String> headers = new HashMap<>();
+    public Map<String, String> goRestHeaders(String token){
+        headers.put("Accept", "application/json");
+        headers.put("content-Type", "application/json");
+        headers.put("Authorization", token);
+        return headers;
+    }
 
 }
